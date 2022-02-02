@@ -35,13 +35,13 @@
 
     <h2>Accedi</h2>
 
-    <div class="access" method="post">
+    <div class="access">
 
-        @method('post')
+        <form action="{{route('login')}}" method="post">
 
-        @csrf
+            @method('post')
 
-        <form action="{{route('login')}}">
+            @csrf
         
             <label for="email">Inserisci la Email:</label>
             <input type="text" name="email" placeholder="Inserisci la mail"> <br>
